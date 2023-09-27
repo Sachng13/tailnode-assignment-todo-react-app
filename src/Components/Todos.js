@@ -13,7 +13,6 @@ function Todos(props) {
           key={item.id}
           deleteTaskhandler={props.deleteTaskhandler}
           handlingToggleTask={props.handlingToggleTask}
-        //   handleEditTask={props.handleEditTask}
         />
       })}
       <h2>Completed Todos</h2>
@@ -22,7 +21,6 @@ function Todos(props) {
           key={item.id}
           deleteTaskhandler={props.deleteTaskhandler}
           handlingToggleTask={props.handlingToggleTask}
-        //   handleEditTask={props.handleEditTask}
         />
       })}
 

@@ -7,13 +7,13 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState('');
 
-  // Load todos from Local Storage on initial render
+  // Loading todos from Local Storage on initial render
   useEffect(() => {
     const savedTodos = JSON.parse(localStorage.getItem('todos')) || [];
     setTodos(savedTodos);
   }, []);
 
-  // Save todos to Local Storage whenever todos state changes
+  // Saveing todos to Local Storage whenever todos state changes
   useEffect(() => {
     if (todos.length > 0){
       localStorage.setItem('todos', JSON.stringify(todos));
@@ -63,10 +63,8 @@ function App() {
     ></AddTodo>
    
     <Todos todos={todos}
-      // editTaskId={editTaskId}
       deleteTaskhandler={deleteTaskhandler}
       handlingToggleTask={handlingToggleTask}
-      // handleEditTask={handleEditTask}
     ></Todos>
   </div>
   );
