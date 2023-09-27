@@ -1,13 +1,14 @@
-<h1>Todo List Using React </h1>
+<h1>Tailnode assignment Todo List app Using React </h1>
 <hr>
-<p>This is a simple Todo List application built using React. It allows users to add, edit, and delete tasks, mark tasks as completed . </p>
+<p>This is a simple Todo List application built using React. It allows users to add and delete tasks, mark tasks as completed . </p>
 
 <h3>Features</h3>
 <ul>
-  <li>Add tasks: Users can enter new tasks in the input field and click the "Add" button to add them to the list.</li>
-  <li>Edit tasks: Users can click the edit icon next to a task to edit its title.</li>
+  <li>Add tasks: Users can enter new tasks in the input field and press enter button to add .</li>
   <li>Delete tasks: Users can click the delete icon next to a task to delete it from the list.</li>
   <li>Mark tasks as completed: Users can check the checkbox next to a task to mark it as completed.</li>
+  <li>Reset - There is a reset button by clicking on it user can reset the app</li>
+  <li>Todo data are persistent - That means after refreshing also the todos will still be there </li>
 </ul>
 
 <h3>Folder structure :-</h3>
@@ -30,7 +31,7 @@ src/
         
 <h3>Hosted link:-</h3>
 
-https://sachng13.github.io/Todo-list-React-app/
+https://sachng13.github.io/tailnode-assignment-todo-react-app/
 
 
 
