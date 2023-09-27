@@ -45,15 +45,23 @@ function App() {
     setTodos(toggledTodos)
     localStorage.setItem('todos', JSON.stringify(toggledTodos));
   }
+  const handleReset = (e)=>{
+    setTodos([]);
+    localStorage.setItem('todos', JSON.stringify([]));
+  }
 
   return (
     <div className="container">
     {/* <ToastContainer /> */}
-    <div className="heading"><h1>Todo List App</h1></div>
+    <div className="heading">
+      <h1>Todo List App</h1>
+      <button type='reset' className='reset' onClick={handleReset}>Reset</button>
+      </div>
     <AddTodo setNewTodo={setNewTodo}
              newTodo = {newTodo}
              handleKeyPress={handleKeyPress}
     ></AddTodo>
+   
     <Todos todos={todos}
       // editTaskId={editTaskId}
       deleteTaskhandler={deleteTaskhandler}
